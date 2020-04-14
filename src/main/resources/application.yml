@@ -1,0 +1,22 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+  application:
+    name: fileServe
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+  main:
+    allow-bean-definition-overriding: true
+
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/
+server:
+  port: 9090
+
+
+privateKey: MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAKpbZVfRigHCFa9coYIS6L+vUXCytMVEZ0v8gpb6KCnOcrfsAAHg8tCxeAcs/62e0VwtJRXGcHyrWYsRBGF2j5LTW/s3GeMuu+YIc/oL7FOUgnDbbNaZ0CE+uZwqi5UMz9MW+w/G56+/UwnONSffpHNmYXwmDr7Q3SQDcz2TwudbAgMBAAECgYA/YZe376bX9pzYzK7uVRixUIoNUv+8sTF5bO4tO887lqrJ0Q1DpazRhmWwzcYmk4MzNzyn+FebmqjK+77UgCb0DwBJG9DoTsDsuDSdNqJilJnTxCFSYVd6mA0B0zceik5PqHHFEth6218X8yNXIARuUOJWmiG7YIhMGsdlXiKvgQJBANwtc34ggEE1UN3oQzuwy/tR8CJZn2zTl4OmTTP9Seg5SsqOpqC5wQ96BnSRBMVwvYBXDlWPAZtmqIHvgWhrnZsCQQDGEuKEkqlpdyItsSZKWhyB7fyvvYxA7P//bcqJD6UtzBwbkQwWyCrj8eHS9JbPM3HO+lF2PrvUp2QiUwcwv1lBAkEAysBYACdxs5qjMxW1A/yUeoRDu34IXzCh76tuoJd4PY60nr6qFou3isb1ttXsLNzaxJpmKseb1Ty9o5mn8z5WTQJACtv0MUJ9KTwP0qN4rvDbyT/L77Kbot+bdVyGkxcZfjZHgDdmi0U0HMUhFVi1f+yZG7jbiHkOAS2gLsWQilqjQQJAS+YFBixdw27yqm4G5CvdziU1qVa0+xnNuYYGJpAa+BGSN+pckgpsXEBKvB1DNczA9nrjLM9aqWSiTJOkW4EZTw==
+publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqW2VX0YoBwhWvXKGCEui/r1FwsrTFRGdL/IKW+igpznK37AAB4PLQsXgHLP+tntFcLSUVxnB8q1mLEQRhdo+S01v7NxnjLrvmCHP6C+xTlIJw22zWmdAhPrmcKouVDM/TFvsPxuevv1MJzjUn36RzZmF8Jg6+0N0kA3M9k8LnWwIDAQAB
